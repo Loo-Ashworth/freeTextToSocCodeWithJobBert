@@ -25,7 +25,7 @@ def load_or_create_resources():
     else:
         print("No Cache Found... Creating now (be patient!)")
         # Load and prepare data
-        df = pd.read_csv("/Users/louisashworth/PyCharmMiscProject/soc2020volume2thecodingindexexcel16102024.csv", encoding="ISO-8859-1")
+        df = pd.read_csv("soc2020volume2thecodingindexexcel16102024.csv", encoding="ISO-8859-1")
         df['combined_text'] = (
                 df['SOC2020_ext_SUG_title'].str.lower() + " " +
                 df['INDEXOCC_-_natural_word_order'].str.lower()
